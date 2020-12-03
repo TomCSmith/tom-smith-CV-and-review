@@ -5,10 +5,17 @@ date: "November 2020"
 output: pdf_document
 geometry: margin=0.75in
 ---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, comment=FALSE, message=FALSE)
+library(tidyverse)
+library(xtable)
+```
+
+
 \centering
-\Large  
+\large  
 **Assistant Research Biologist**  
-\normalsize University of California Santa Barbara  
+\scriptsize University of California Santa Barbara  
 Earth Research Institute  
 &  
 Sierra Nevada Aquatic Research Laboratory  
@@ -20,142 +27,196 @@ tcsmith@ucsb.edu
 
 ***  
 \raggedright  
-Ph.D. 	2015. University of California Santa Barbara, Department of Ecology, Evolution, and Marine Biology.  
-M.A.	2013. University of California Santa Barbara, Department of Ecology, Evolution, and Marine Biology.  
+
+
+Ph.D. 	2015. University of California Santa Barbara, Department of Ecology, Evolution, and Marine Biology (EEMB).  
+M.A.	2013. University of California Santa Barbara, EEMB.  
 B.S.	2002. University of Vermont, Environmental Sciences.  
 
 \large  
 **Appointments and Research Positions**  
 \normalsize  
 
-Assistant Researcher II, UCSB Earth Research Institute (ERI), 2018 – present.  
-Affiliated Researcher, UC Berkeley Dept. of Integrated Biology 2017-2019 (Sponsor: Mary Power)  
-Postdoctoral Researcher, UCSB Marine Science Institute (MSI), 2016 – 2018.  
-Staff Research Assistant, UCSB, MSI, June – September 2015.  
-Graduate Student Research Assistant, UCSB EEMB, 2007 – 2012.  
-Staff Research Assistant, UCSB MSI, 2004 – 2007.  
-Staff Research Assistant, UC Berkeley, Department of Integrative Biology, 2005 – 2007.  
-Field Crew Member, Oregon State University/United States Geological Survey, 2005.  
-Entomological Assistant, Research Corporation of the University of Hawaii/USGS, 2002 – 2004.  
-Laboratory and Field Assistant, UVM, Department of Biology, 1998 – 2002.  
+```{r results='hide', message=FALSE, echo=FALSE}
+appointments <-read_csv("timeframe,position
+2018 – present,    Assistant Researcher II. UCSB Earth Research Institute (ERI).  
+2017 – 2019,       Affiliated Researcher. UC Berkeley Dept. of Integrated Biology (Sponsor: Mary Power).  
+2016 – 2018,       Postdoctoral Researcher. UCSB Marine Science Institute (MSI).  
+2015,              Staff Research Assistant. UCSB MSI.  
+2007 – 2012,       Graduate Student Research Assistant. UCSB EEMB.  
+2005 – 2007,       Staff Research Assistant. UC Berkeley Department of Integrative Biology.   
+2004 – 2007,       Staff Research Assistant. UCSB MSI.  
+2005,              Field Crew Member. Oregon State University/United States Geological Survey (USGS).  
+2002 – 2004,       Entomological Assistant. Research Corporation of the University of Hawaii/USGS.  
+1998 – 2002,       Laboratory and Field Assistant. University of Vermont Department of Biology.  ")
+
+```
+```{r results = "asis", message=FALSE, echo=FALSE}
+#install.packages("xtable")
+library(xtable)
+xappt <- xtable(appointments)
+print(xappt, include.rownames = FALSE, include.colnames = FALSE, hline.after=NULL)
+```
+
+
+\large  
+**Teaching, Mentoring, and Advising**  
+\normalsize
+
+2020  -  Host and mentor, Environmental Data Initiative Summer Fellowship Program.  
+2015  -  Lecturer, Invertebrate Zoology. UCSB EEMB.  
+2014  -  Teaching Associate, Invertebrate Zoology. UCSB EEMB.  
+2008-2014  -  Teaching Assistant. UCSB EEMB. Courses include: Invertebrate Zoology, Methods in Aquatic Community Ecology, Parasitology, Aquatic Community Ecology, Ecology of Infectious Diseases, Herpetology, Introductory Biology Laboratory.  
 
 \large  
 **Research Grants**  
 \normalsize  
-2020. $166,760. **Thomas C. Smith**, Roland A Knapp. California Department of Fish and Wildlife "Reintroduction of Sierra Nevada yellow-legged frogs (*Rana sierrae*) to restore an isolated metapopulation in the central Sierra Nevada."  
-2020. $99,830. **Thomas C. Smith**, Roland A. Knapp, Erica Bree Rosenblum. United States Fish and Wildlife Service "Frog conservation using targeted gene flow: Translocation of disease-resistant Sierra Nevada yellow-legged frogs (*Rana sierrae*) into the last Bd-naive population in Yosemite National Park."  
-2020. $99,967. **Thomas C. Smith**, Roland A. Knapp. Yosemite National Park "Increase Resilience of Endangered Sierra Nevada Yellow-legged Frogs."  
-2020. $43,240. Roland A. Knapp, Thomas C. Smith. Sequoia Parks Conservancy "Mountain Yellow-legged Frog Restoration Project."  
-2020. $159,666. Roland A. Knapp, Thomas C. Smith. California Department of Fish and Wildlife "Recovery of mountain yellow-legged frogs in the southern Sierra Nevada."  
-2019. $49,504. Roland A. Knapp, Thomas C. Smith. U.S. Fish and Wildlife Service "Mountain yellow-legged frog translocations in Yosemite National Park"  
-2019. $49,500. **Thomas C. Smith**, Roland A. Knapp. U.S. Fish and Wildlife Service “Chytrid testing and treatment.”  
-2019. $9,310. **Thomas C. Smith**, Roland A. Knapp. U.S. Fish and Wildlife Service. “Chytrid Rapid Response Kits.”  
-2018. $71,601.57. Roland A. Knapp, Thomas C. Smith. Yosemite National Park “Restoring genetic diversity of endangered mountain yellow-legged frogs.”  
-2012. $1,500. Valentine Eastern Sierra Reserve Graduate Student Research Grant.  
-2011. $1,902. UCSB Graduate Division Science and Engineering Research Grant.  
-2010. $6,000. The Henry Luce Foundation Environmental Science to Solutions Fellowship.    
-2009. $3,000. Valentine Eastern Sierra Reserve Graduate Student Research Grant.  
-2008-2014.  $7,242. UCSB EEMB departmental grants and fellowships.  
-2008. $2,500. UC Natural Reserve System Mildred E. Mathias Graduate Student Research Grant.  
-2001. $3,000. UVM Hughes Endeavor for Life Sciences Excellence (undergraduate award).  
-2001. $3,500. UVM Stimulate Undergraduate and Graduate Research with Faculty Mentoring.  
+2020  
 
-\Large  
+-  $166,760  |  Thomas C. Smith, Roland A Knapp. California Department of Fish and Wildlife "Reintroduction of Sierra Nevada yellow-legged frogs (*Rana sierrae*) to restore an isolated metapopulation in the central Sierra Nevada."  
+-  $99,830   |  Thomas C. Smith, Roland A. Knapp, Erica Bree Rosenblum. United States Fish and Wildlife Service "Frog conservation using targeted gene flow: Translocation of disease-resistant Sierra Nevada yellow-legged frogs (*Rana sierrae*) into the last Bd-naive population in Yosemite National Park."  
+-  $99,967   |  Thomas C. Smith, Roland A. Knapp. Yosemite National Park "Increase Resilience of Endangered Sierra Nevada Yellow-legged Frogs."  
+-  $43,240   |  Roland A. Knapp, Thomas C. Smith. Sequoia Parks Conservancy "Mountain Yellow-legged Frog Restoration Project."  
+-  $159,666  |  Roland A. Knapp, Thomas C. Smith. California Department of Fish and Wildlife "Recovery of mountain yellow-legged frogs in the southern Sierra Nevada."  
+
+2019  
+
+-  $49,504   |  Roland A. Knapp, Thomas C. Smith. U.S. Fish and Wildlife Service "Mountain yellow-legged frog translocations in Yosemite National Park"  
+-  $49,500   |  Thomas C. Smith, Roland A. Knapp. U.S. Fish and Wildlife Service “Chytrid testing and treatment.”  
+-  $9,310    |  Thomas C. Smith, Roland A. Knapp. U.S. Fish and Wildlife Service. “Chytrid Rapid Response Kits.”  
+
+2018  
+
+-  $71,601.57|  Roland A. Knapp, Thomas C. Smith. Yosemite National Park “Restoring genetic diversity of endangered mountain yellow-legged frogs.”  
+
+2008 - 2014
+
+-  $1,500. Valentine Eastern Sierra Reserve Graduate Student Research Grant.  
+-  $1,902. UCSB Graduate Division Science and Engineering Research Grant.  
+-  $6,000. The Henry Luce Foundation Environmental Science to Solutions Fellowship.    
+-  $3,000. Valentine Eastern Sierra Reserve Graduate Student Research Grant.  
+-  $7,242. UCSB EEMB departmental grants and fellowships.  
+-  $2,500. UC Natural Reserve System Mildred E. Mathias Graduate Student Research Grant.  
+
+2001 
+
+-  $3,000. UVM Hughes Endeavor for Life Sciences Excellence (undergraduate award).  
+-  $3,500. UVM Stimulate Undergraduate and Graduate Research with Faculty Mentoring.  
+
+
+\large  
 **Peer-Reviewed Publications**  
 \normalsize  
 
-1.  In prep: Smith, Thomas C., Maxwell B. Joseph, Roland A. Knapp, and Brian J. Halstead. Gartersnake translocations reduce predation pressure on recovering populations of endangered Sierra Nevada yellow-legged frogs. Target journal: Ecological Applications.  
+1.  Smith, T.C., A.M. Picco, R.A. Knapp. 2017. Ranaviruses infect mountain yellow-legged frogs (*Rana muscosa* and *Rana sierrae*) threatened by Batrachochytrium dendrobatidis. Herpetological Conservation and Biology 12:149–159.  
 
-2.  In prep: Knapp, Roland A., Maxwell B. Joseph, Thomas C. Smith, Ericka Hegeman, Vance Vredenburg, James Erdman, Andrea Jani. Antifungal interventions can reduce individual infection intensities but do not prevent local extinctions of the endangered mountain yellow-legged frogs.  
+2.  Smith, T.C., R.A. Knapp, C.J. Briggs. 2016. Declines and extinctions of mountain yellow-legged frogs have small effects on benthic macroinvertebrate communities. Ecosphere 7:6 DOI: 10.1002/ecs2.1327.  
 
-3.  In prep: Thomas C. Smith, Claire Pavelka, Ericka Hegeman, and Roland A. Knapp. "Large scale synoptic surveys of alpine lake communities describe with emphasis on amphibians, invertebrates, and non-native fish". Data paper. Target: Ecology.  
+3.  Smith, T.C. 2015. Ecological impacts of mountain yellow-legged frog (Rana muscosa and Rana sierrae) declines on Sierra Nevada lake communities. **Dissertation**, University of California, Santa Barbara. http://dx.doi.org/DOI:10.13140/RG.2.1.1734.0246
 
-4.  In prep: Knapp, Roland A., Claire Pavelka, Thomas C. Smith, and Ericka Hegeman. “The Sierra Lakes Inventory Project: non-native fish and community composition of >8,000 lakes and ponds in the Sierra Nevada, California.” Data publication, Environmental Data Initiative.  
+4.  Smith, T.C. 2013. Pseudostaurosira pseudoconstruens. in Diatoms of the United States, http://westerndiatoms.colorado.edu/taxa/species/pseudostaurosira_pseudoconstruens  
 
-5.  In prep: Smith, Thomas C., Cheryl J. Briggs. Endangered amphibian larvae in high mountain lakes have weak and variable top-down impact on algal resources and invertebrate competitors. Target: Freshwater Science.  
+5.  Mordecai, E.A., K.P. Paaijmans, L.R. Johnson, C.H. Balzer, T. Ben-Horin, E. de Moor, A. McNally, S. Pawar, S.J. Ryan, T.C. Smith, K.D. Lafferty. 2012. Optimal temperature for malaria transmission is dramatically lower than previously predicted. Ecology Letters (2013) 16: 22–30
 
-6.  Smith, T.C., A.M. Picco, R.A. Knapp. 2017. Ranaviruses infect mountain yellow-legged frogs (*Rana muscosa* and *Rana sierrae*) threatened by Batrachochytrium dendrobatidis. Herpetological Conservation and Biology 12:149–159.  
+6.	Knapp, R.A., C.J. Briggs, T.C. Smith, and J.R. Maurer. 2011. Nowhere to hide: impact of a temperature sensitive amphibian pathogen along an elevation gradient in the temperate zone. Ecosphere 2(8):art93. doi:10.1890/ES11-00028.1
 
-7.  Smith, T.C., R.A. Knapp, C.J. Briggs. 2016. Declines and extinctions of mountain yellow-legged frogs have small effects on benthic macroinvertebrate communities. Ecosphere 7:6 DOI: 10.1002/ecs2.1327.  
+7.	Schall, J.J., T.C. Smith. 2006. Detection of a Malaria Parasite (Plasmodium mexicanum) in ectoparasites (Mites and Ticks), and Possible Significance for Transmission. Journal of Parasitology., 92:413–415
 
-8.  Smith, T.C. 2015. Ecological impacts of mountain yellow-legged frog (Rana muscosa and Rana sierrae) declines on Sierra Nevada lake communities. **Dissertation**, University of California, Santa Barbara. http://dx.doi.org/DOI:10.13140/RG.2.1.1734.0246
+8.	Woodworth, B.L., C.T. Atkinson, D.A. LaPointe, P.J. Hart, C.S. Spiegel, E.J. Tweed, C. Henneman, J. LeBrun, T. Denette, R. DeMots, K.L. Kozar, D. Triglia, D. Lease, A. Gregor, T. Smith, and D. Duffy. 2005. Host population persistence in the face of introduced vector-borne diseases: Hawaii amakihi and avian malaria. Proceeding of the National Academy of Sciences, 102:1531-1536.
 
-9.  Smith, T.C. 2013. Pseudostaurosira pseudoconstruens. in Diatoms of the United States, http://westerndiatoms.colorado.edu/taxa/species/pseudostaurosira_pseudoconstruens  
+**Manuscripts in preparation**  
 
-10.  Mordecai, E.A., K.P. Paaijmans, L.R. Johnson, C.H. Balzer, T. Ben-Horin, E. de Moor, A. McNally, S. Pawar, S.J. Ryan, T.C. Smith, K.D. Lafferty. 2012. Optimal temperature for malaria transmission is dramatically lower than previously predicted. Ecology Letters (2013) 16: 22–30
+1.  Smith, Thomas C., Maxwell B. Joseph, Roland A. Knapp, and Brian J. Halstead. Gartersnake translocations reduce predation pressure on recovering populations of endangered Sierra Nevada yellow-legged frogs. Target: Ecological Applications.  
 
-11.	Knapp, R.A., C.J. Briggs, T.C. Smith, and J.R. Maurer. 2011. Nowhere to hide: impact of a temperature sensitive amphibian pathogen along an elevation gradient in the temperate zone. Ecosphere 2(8):art93. doi:10.1890/ES11-00028.1
+2.  Knapp, Roland A., Maxwell B. Joseph, Thomas C. Smith, Ericka Hegeman, Vance Vredenburg, James Erdman, Andrea Jani. Antifungal interventions can reduce individual infection intensities but do not prevent local extinctions of the endangered mountain yellow-legged frogs.  Target: TBD.
 
-12.	Schall, J.J., T.C. Smith. 2006. Detection of a Malaria Parasite (Plasmodium mexicanum) in ectoparasites (Mites and Ticks), and Possible Significance for Transmission. Journal of Parasitology., 92:413–415
+3.  Thomas C. Smith, Claire Pavelka, Ericka Hegeman, and Roland A. Knapp. "Large scale synoptic surveys describe alpine lake communities with emphasis on amphibians, invertebrates, and non-native fish". Data paper. Target: Ecology.  
 
-13.	Woodworth, B.L., C.T. Atkinson, D.A. LaPointe, P.J. Hart, C.S. Spiegel, E.J. Tweed, C. Henneman, J. LeBrun, T. Denette, R. DeMots, K.L. Kozar, D. Triglia, D. Lease, A. Gregor, T. Smith, and D. Duffy. 2005. Host population persistence in the face of introduced vector-borne diseases: Hawaii amakihi and avian malaria. Proceeding of the National Academy of Sciences, 102:1531-1536.
+4.  Knapp, Roland A., Claire Pavelka, Thomas C. Smith, and Ericka Hegeman. “The Sierra Lakes Inventory Project: non-native fish and community composition of >8,000 lakes and ponds in the Sierra Nevada, California.” Data publication, Environmental Data Initiative.  
 
-\Large  
+5.  Smith, Thomas C., Cheryl J. Briggs. Endangered amphibian larvae in high mountain lakes have weak and variable top-down impact on algal resources and invertebrate competitors. Target: Freshwater Science.  
+
+\large  
 **Presentations**  
 \normalsize  
 *Invited*  
-1.  UC NRS talk (November 2020)  
-2.  Sierra Nevada Alliance (March 2020)  
-3.  Smith, T.C. (2017). Starving snakes and flying frogs: studying gartersnakes to support frog conservation in Yosemite National Park (October 27). UC Berkeley Conservation, Wildlife, and Fisheries Biology seminar, Berkeley, CA.  
-4.  Smith, T.C. (2015). The impacts of mountain yellow-legged frog declines on algae and insect communities in Sierra Nevada lakes (June 9). Sierra Nevada Aquatic Research Laboratory 2015 Lecture Series, Sierra Nevada Aquatic Research Laboratory, Mammoth Lakes, CA. https://vimeo.com/130562633  
+
+1.  Think Globally, Act Locally: how a pandemic challenges conservation of a California frog, and how scientists and managers can respond. 12 November 2020. UCSB Natural Reserve System Seminar Series, Santa Barbara, CA. https://www.youtube.com/watch?v=16XknynQ7nk  
+
+2.  The mountain yellow-legged frogs of the Sierra Nevada: Natural history, threats, and recovery. 8 May 2020. Sierra Nevada Alliance Monthly Webinar, South Lake Tahoe, CA.  
+
+3.  Starving snakes and flying frogs: studying gartersnakes to support frog conservation in Yosemite National Park. 27 October 2017. University of California Berkeley Conservation, Wildlife, and Fisheries Biology seminar, Berkeley, CA.  
+
+4.  Smith, T.C. The impacts of mountain yellow-legged frog declines on algae and insect communities in Sierra Nevada lakes. 9 June 2015. Sierra Nevada Aquatic Research Laboratory 2015 Lecture Series, Sierra Nevada Aquatic Research Laboratory, Mammoth Lakes, CA. https://vimeo.com/130562633  
 
 *Contributed*  
+
 1.  Smith. T.C. (2019) Community ecology of endangered frogs in high elevation lakes (March 26). Sierra Nevada Aquatic Research Consortium, Mammoth Lakes, CA.  
+
 2.  Smith. T.C., R.A. Knapp, and B.J. Halstead. (2019) Mountain gartersnake diet and mountain yellow-legged frog restoration. California-Nevada Amphibian Populations Task Force Annual Meeting, Arcata, CA.  
+
 3.  Smith, T.C. (2018). Abundance and diet of predatory gartersnakes vary across mountain yellow-legged frog restoration sites and may influence conservation strategies (November 15). Sequoia Science Symposium, Three Rivers, CA.  
+
 4.  Smith, T.C., A. Picco, and R.A. Knapp (2018). Ranaviruses Infect Mountain Yellow-legged Frogs (*Rana muscosa* and *Rana sierrae*) (January 12). California-Nevada Amphibian Populations Task Force Annual Meeting, Auburn, CA.  
+
 5.  Smith, T.C., R.A. Knapp, C.J. Briggs (2016). Ecological consequences of disease-driven decline of mountain yellow-legged frogs (*Rana muscosa* and *Rana sierrae*) (Jan 8). California and Nevada Amphibian Population Task Force Annual Meeting, Davis, CA.  
+
 6.  Smith, T.C. (2015). Ecological impacts of amphibian declines on Sierra Nevada lake communities (January 16). Ph.D. Exit Seminar. UCSB, Santa Barbara, CA.  
+
 7.  Smith, T.C., C.J. Briggs, R.A. Knapp (2014). Disease driven amphibian extinctions have weak effects on alpine lake communities in California’s Sierra Nevada (August 11). Ecological Society of America Annual Meeting, Sacramento CA.  
+
 8.  Smith, T.C. (2013) Ripples in the lake: Sierra Nevada aquatic insect communities respond to amphibian declines (February 2). UCSB EEMB Graduate Student Symposium, Santa Barbara, CA.  
+
 9.  Smith, T.C. (2011) Interactions between alpine lake producers and consumers (January 7). Presentation at California/Nevada Amphibian Population Task Force 2011 Meeting, Yosemite National Park, CA.  
+
 10.  Smith, T.C. (2010) Interactions between tadpoles, mayflies, and epiphyton in alpine
 lakes of the Sierra Nevada (February 27). UC Natural Reserve System Mildred E. Mathias Graduate Student Research Symposium, Bodega Bay, CA.  
+
 11.  Smith, T.C. (2010) Interactions between tadpoles, mayflies, and epiphyton in alpine
 lakes of the Sierra Nevada (February 20). UCSB EEMB Graduate Student Symposium, Santa Barbara, CA.  
+
 12.  Smith, T.C. (2009) Amphibian Declines, Species Interactions, and Ecological Stability (November 14). Amphibian Disease Meeting, Arizona State University, Tempe, AZ.  
+
 13.  Smith, T.C., A. Gregor, A.D. Lease, R. DeMots, D. LaPointe (2003). Diversity, abundance, seasonality, and infection of mosquitoes on windward Mauna Loa (July 11). Hawaii Conservation Conference, Honolulu, HI.  
 
 *Posters*  
-1.  Smith, Thomas C., Brian J. Halstead, and Roland A. Knapp (2018). Predation by Gartersnakes (*Thamnophis elegans*) on Translocated and Reintroduced Mountain Yellow-legged Frog Populations (Rana muscosa and Rana sierrae) (January 11). Poster at California-Nevada Amphibian Populations Task Force Annual Meeting, Auburn, CA.  
+
+1.  Smith, Thomas C., Brian J. Halstead, and Roland A. Knapp (2018). Predation by Gartersnakes (*Thamnophis elegans*) on Translocated and Reintroduced Mountain Yellow-legged Frog Populations (*Rana muscosa* and *Rana sierrae*) (January 11). Poster at California-Nevada Amphibian Populations Task Force Annual Meeting, Auburn, CA.  
 2.  Smith, Thomas C. (2013). Interactions between alpine lake producers and consumers (February 8). Poster at Discover the Natural Reserve System: A Conference Celebrating the UCSB NRS, UCSB, Santa Barbara, CA.  
-3.  Hernandez, Michael J., Thomas C. Smith, and Roland A. Knapp (2013). Insect community response to disease-driven amphibian extinctions (February 8). Poster at Discover the Natural Reserve System: A Conference Celebrating the UCSB NRS, UCSB, Santa Barbara, CA.  
+3.  Hernandez, Michael J., Thomas C. Smith, and Roland A. Knapp (2013). Insect community response to disease-driven amphibian extinctions (February 8). Poster at Discover the Natural Reserve System: A Conference Celebrating the UCSB NRS, UCSB, Santa Barbara, CA. 
 
-***
+\large  
+**Other Activities**  
+\normalsize  
 
-Professional Service
-Coordinator, Sierra Nevada Aquatic Research Consortium (SNARC) 2018 - present
-Reviewer for Freshwater Science, Copeia, Hydrobiologia, National Science Foundation, Agence Nationale de la Recherche.
+Professional Service  
+-  Coordinator, Sierra Nevada Aquatic Research Consortium (SNARC) 2018 - present.  
+-  Reviewer for Freshwater Science, Copeia, Hydrobiologia, National Science Foundation, Agence Nationale de la Recherche.  
+-  Participant, Mountain yellow-legged frog Interagency Conservation Strategy planning, 2018 - present.  
 
-COMMITTEES
-UCSB EEMB Graduate Student Advisory Committee, 2009-2011
-UCSB Natural Reserve Advisory Committee, Graduate Student Representative, 2008-2009
-UCSB EEMB Graduate Student Research Symposium planning committee, 2009
+Committees  
+-  UCSB EEMB Graduate Student Advisory Committee, 2009-2011  
+-  UCSB Natural Reserve Advisory Committee, Graduate Student Representative, 2008-2009  
+-  UCSB EEMB Graduate Student Research Symposium planning committee, 2009  
 
-OTHER SERVICE
-Co-instructor, UCSB EEMB Software Carpentry workshops, 2015-2016.
-“Eco-Coffee” organizer, weekly coffee hour for all UCSB biologists, 2007-2014.
+Other  
+-  Co-instructor, UCSB EEMB Software Carpentry workshops, 2015-2016.  
+-  “Eco-Coffee” organizer, weekly coffee hour for all UCSB biologists, 2007-2014.  
 
-Teaching, Mentoring, and Advising 
-2020 Host and mentor, Environmental Data Initiative Summer Fellowship Program
-2015 Lecturer, Invertebrate Zoology. UCSB EEMB
-2014 Teaching Associate, Invertebrate Zoology. UCSB EEMB
-2008-2014 Teaching Assistant. UCSB EEMB. (Courses taught include: Aquatic Community Ecology, Methods in Aquatic Community Ecology, Invertebrate Zoology, Parasitology, Ecology of Infectious Diseases, Herpetology, Introductory Biology Laboratory)
+Professional Training  
+-  R workshops: vegan, ggplot, Ecological Society of America Annual Meeting, 2014.  
+-  Software Carpentry, UCSB, 2014.  
+-  Ecology and Systematics of Diatoms, University of Iowa Lakeside Laboratory, 2013.  
+-  Wilderness First Responder certification 2001, 2003, 2005, 2007, 2010.  
 
-Professional Training
-R workshops: vegan, ggplot, Ecological Society of America Annual Meeting, 2014.
-Software Carpentry, UCSB, 2014.
-Ecology and Systematics of Diatoms, University of Iowa Lakeside Laboratory, 2013.
-Wilderness First Responder certification 2001, 2003, 2005, 2007, 2010.
+Honors and Awards  
+-  Nominee, UCSB Graduate Student Association Teaching Awards, 2013, 2014.  
+-  Honorable Mention, National Science Foundation Graduate Research Fellowship Program, 2009.  
+-  Vermont Scholar’s Award, University of Vermont, 1998-2002 (merit based full tuition scholarship).  
 
-Honors and Awards
-Nominee, UCSB Graduate Student Association Teaching Awards, 2013, 2014
-Honorable Mention, National Science Foundation Graduate Research Fellowship Program, 2009
-Vermont Scholar’s Award, University of Vermont, 1998-2002 (merit based full tuition scholarship)
-
-Other Activities
-Volunteer, California Academy of Science Entomology Department, spring 2019.
-Volunteer, San Francisco Bicycle Coalition, December 2017-December 2019.
+Other Activities  
+-  Volunteer, California Academy of Science Entomology Department, spring 2019.  
+-  Volunteer, San Francisco Bicycle Coalition, December 2017-December 2019.  
 
 
 
