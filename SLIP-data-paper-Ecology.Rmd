@@ -1,0 +1,71 @@
+---
+title: "SLIP-data-paper-Ecology"
+author: "TomCSmith"
+date: "12/10/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+> Preparing metadata  
+Metadata text should generally adhere to the instructions for ESA print journals; begin by checking the author guidelines for print manuscripts. Write with precision, clarity, and economy; use the active voice and first person wherever appropriate; avoid footnotes. Please italicize scientific names and the symbols for all variables and constants except Greek letters. Italics should not be used for emphasis. Use leading zeroes with all numbers < 1, including probability values (e.g., P < 0.001). Use the International System of Units (SI) for measurements. Consult Standard Practice for Use of the International System of Units (ASTM Standard E-380-93) for guidance on unit conversions, style, and usage. An abbreviated version may be downloaded  http://www.astm.org.proxy.library.ucsb.edu:2048/author/siquickr.rtf the ASTM website (.rtf file).
+
+### Title.  
+*Titles should be concise and informative. The maximum length is 120 characters (including spaces). Do not include taxonomic names or numerical series designations in titles. Use sentence case, capitalizing only the first word and proper nouns.*
+
+The Sierra Lakes Inventory Project: non-native fish and community composition of lakes and ponds in the Sierra Nevada, California.
+
+### Authors and data compilers.  
+*For each author, state the relevant address--usually the institutional affiliation of the author(s) during the period when all or most of the data were collected. The authors' present address(es), if different from this, should appear in parentheses. Provide a current, corresponding e-mail address to which questions regarding the data set can be directed. Be sure the contact email address is current on ScholarOne https://mc.manuscriptcentral.com/ecology*
+
+-  Smith, Thomas C.; Research biologist; University of California Santa Barbara, Earth Research Institute, and University of California Sierra Nevada Aquatic Research Laboratory. tcsmith@ucsb.edu
+-  Pavelka, Claire; EDI summer fellow; Environmental Data Initiative. cpavelka@alumni.scu.edu
+-  Hegeman, Erika; University of California - Santa Barbara, Sierra Nevada Aquatic Research Laboratory. erickahegeman@ucsb.edu 
+-  Knapp, Roland A.; Research biologist; University of California Santa Barbara, Sierra Nevada Aquatic Research Laboratory. roland.knapp@ucsb.edu
+
+### Abstract and key words. 
+*An abstract and key words should be included in the metadata. The abstract should be brief (<350 words) and provide a brief summary of the database, including the purpose, methods, and results of completed analyses. Avoid speculation in the abstract; if included, speculation about possible interpretations or applications of your data should play a minor role. Do not include any literature citations in the Abstract. Common names may be used when convenient after stating the scientific names. Please supply up to 12 key words for indexing purposes.*
+
+Introduced species have the capacity to radically change communities and ecosystems. High elevation lakes in California's Sierra Nevada were historically fishless. In the late 19th century, fish were stocked into these lakes for recreation; massive increases in stocking occurred in the 20th century. Policy changes on federal lands (National Parks and National Forests, and Wilderness areas) at the end of the 20th century ended stocking in many areas. This history created a landscape of lakes, ponds, meadows and streams that varied in occupancy by non-native predators and created a massive experiment to test community and ecosystem resistance and resilience. The Sierra Lakes Inventory Project (SLIP) was a research endeavor that ran from 1995-2002, with the original objective of describing the effects of non-native predators on alpine lake communities. 
+
+The original objective of SLIP was to describe impacts of non-native fish on lake communities.
+
+In the decades since, the SLIP data has supported research and management of Sierra Nevada aquatic ecosystems and their terrestrial interfaces. We described the physical characteristics of and surveyed aquatic communities for > 8,000 lentic water bodies in the southern Sierra Nevada, including lakes, ponds, marshes, and meadows. We also created digital map layers for these water bodies when such layers did not exist. but SLIP data has subsequently enabled study of additional ecological issues, including regional amphibian declines and their impacts on communities, and impacts of non-native fish on terrestrial species. In addition, these data are being used to develop fish removal efforts to restore aquatic ecosystems and recover endangered amphibians. The SLIP data is stored in a relational database that collectively describes water bodies (e.g., depth, elevation, location), surveys (conditions, effort), and communities (including approximately 170 fish, amphibian, reptile, benthic macroinvertebrate, and zooplankton taxa).  
+
+
+### Metadata. 
+*The organization of the metadata should correspond to the Metadata Standard (see recent examples of data papers) and all appropriate fields must be completed.*
+
+*The motivation or purpose of your research should appear in the “Research Origin Descriptors”, where you state the questions you sought to answer, and the background of those questions. In the “Methods” section you should provide sufficient information to allow someone to repeat your work. A clear description of the experimental design, sampling procedures, and statistical procedures is especially important in metadata describing field studies, simulations, or experiments. If you list a product (e.g., animal food, analytical device), supply the name and location of the manufacturer. Give the model number for equipment used. Supply complete citations, including author (or editor), title, year, publisher, and version number, for computer software mentioned in the metadata.*
+
+*Particular attention should be paid to providing comprehensive documentation of the physical structure of the data, known data anomalies, and quality assurance and quality control procedures employed. Contributors are encouraged to provide comprehensive documentation of supplemental descriptors that would facilitate secondary data use and interpretation. Before submitting the data paper, contributors should thoroughly review the metadata and verify that physical structure descriptors are sufficient to permit secondary usage of the data.*
+
+*Statistical analysis of the data can appear in the metadata section, but it should be kept to a minimum. Such detailed analyses of data sets could, however, form the core of a companion paper submitted to an ESA print journal.*
+
+> https://portal-s.edirepository.org/nis/mapbrowse?scope=edi&identifier=112&revision=2
+
+### Acknowledgments.  
+*Be brief.*
+
+### Literature cited. 
+*Before submitting the metadata, check each citation in the text against the Literature Cited to see that they match exactly. Format references to conform in style to the ESA print journals.*
+
+### Tables, figures, and appendices. 
+*Tables and figures should be embedded in the metadata where appropriate. Tables should be in HTML and figures should be embedded .JPG, .GIF, or .PNG files. Appendices are not acceptable parts of data papers.*
+
+#### Tables:
+NA.
+
+#### Figures:
+`SLIP_Map.jpg`
+
+#### Appendices: 
+`SLIP_Relationships_Diagram.pdf`
+`SLIP_Protocol_EDI.pdf`
+
+
+### Assembly of metadata file. 
+Assemble the metadata file in the following order: Title, Authors (data compilers), Authors' addresses, Abstract, Key Words, Metadata, Acknowledgments, Literature Cited.
+
