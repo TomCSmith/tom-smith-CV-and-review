@@ -1,7 +1,4 @@
 ---
-subtitle: "Curriculum Vitae"
-title: "Thomas Collier Smith"
-date: "November 2020"
 output: pdf_document
 geometry: margin=0.75in
 ---
@@ -14,7 +11,10 @@ library(xtable)
 
 \centering
 \large  
-**Assistant Research Biologist**  
+Curriculum Vitae  
+Thomas Collier Smith  
+November 2020  
+Assistant Research Biologist  
 
 \scriptsize University of California Santa Barbara  
 Earth Research Institute  
@@ -81,22 +81,29 @@ teach <- c('year, thing
 
 ```{r results = "asis", message=FALSE, echo=FALSE}
 xteach <-xtable(teach , align=c("l","p{2.5cm}","|p{14.5cm}") )#, align=c("l","l","|p{17cm}")  
-
-
 print(xteach, include.rownames = FALSE, include.colnames = FALSE, hline.after=NULL, comment=FALSE)
 ```
 
 \large  
 **Research Grants**  
-\normalsize  
-2020  
+\normalsize
+```{r results='asis', echo=FALSE}
+funds <- c('year, amount, thing
+2020, "$166,760", "Thomas C. Smith, Roland A Knapp. California Department of Fish and Wildlife. Reintroduction of Sierra Nevada yellow-legged frogs (Rana sierrae) to restore an isolated metapopulation in the central Sierra Nevada."
+,"$166,760", "Thomas C. Smith, Roland A Knapp. California Department of Fish and Wildlife Reintroduction of Sierra Nevada yellow-legged frogs (Rana sierrae) to restore an isolated metapopulation in the central Sierra Nevada."
+,"$99,830", "Thomas C. Smith, Roland A. Knapp, Erica Bree Rosenblum. United States Fish and Wildlife Service. Frog conservation using targeted gene flow: Translocation of disease-resistant Sierra Nevada yellow-legged frogs (Rana sierrae) into the last Bd-naive population in Yosemite National Park."
+,"$99,967","Thomas C. Smith, Roland A. Knapp. Yosemite National Park. Increase Resilience of Endangered Sierra Nevada Yellow-legged Frogs."
+,"$43,240", "Roland A. Knapp, Thomas C. Smith. Sequoia Parks Conservancy. Mountain Yellow-legged Frog Restoration Project."
+,"$159,666", "Roland A. Knapp, Thomas C. Smith. California Department of Fish and Wildlife. Recovery of mountain yellow-legged frogs in the southern Sierra Nevada."') %>% 
+  read_csv(quote='"', col_types = cols(year="c", amount="c", thing = "c") )
+```
+```{r results = 'asis', message=FALSE, echo=FALSE}
+xfunds <-xtable(funds , align=c("l","p{1cm}", "r","|p{14cm}") )#, align=c("l","l","|p{17cm}")  
+print(xfunds, include.rownames = FALSE, include.colnames = FALSE, hline.after=NULL, comment=FALSE)
+```
+***  
 
--  $166,760  |  Thomas C. Smith, Roland A Knapp. California Department of Fish and Wildlife "Reintroduction of Sierra Nevada yellow-legged frogs (*Rana sierrae*) to restore an isolated metapopulation in the central Sierra Nevada."  
--  $99,830   |  Thomas C. Smith, Roland A. Knapp, Erica Bree Rosenblum. United States Fish and Wildlife Service "Frog conservation using targeted gene flow: Translocation of disease-resistant Sierra Nevada yellow-legged frogs (*Rana sierrae*) into the last Bd-naive population in Yosemite National Park."  
--  $99,967   |  Thomas C. Smith, Roland A. Knapp. Yosemite National Park "Increase Resilience of Endangered Sierra Nevada Yellow-legged Frogs."  
--  $43,240   |  Roland A. Knapp, Thomas C. Smith. Sequoia Parks Conservancy "Mountain Yellow-legged Frog Restoration Project."  
--  $159,666  |  Roland A. Knapp, Thomas C. Smith. California Department of Fish and Wildlife "Recovery of mountain yellow-legged frogs in the southern Sierra Nevada."  
-
+\vspace{5mm}
 2019  
 
 -  $49,504   |  Roland A. Knapp, Thomas C. Smith. U.S. Fish and Wildlife Service "Mountain yellow-legged frog translocations in Yosemite National Park"  
@@ -126,7 +133,7 @@ print(xteach, include.rownames = FALSE, include.colnames = FALSE, hline.after=NU
 **Peer-Reviewed Publications**  
 \normalsize  
 
-1.  Smith, T.C., A.M. Picco, R.A. Knapp. 2017. Ranaviruses infect mountain yellow-legged frogs (*Rana muscosa* and *Rana sierrae*) threatened by Batrachochytrium dendrobatidis. Herpetological Conservation and Biology 12:149–159.  
+1.  Smith, T.C., A.M. Picco, R.A. Knapp. 2017. Ranaviruses infect mountain yellow-legged frogs (*Rana muscosa* and *Rana sierrae*) threatened by Batrachochytrium dendrobatidis. Herpetological Conservation and Biology 12:149–159.  http://www.herpconbio.org/Volume_12/Issue_1/Smith_etal_2017.pdf
 
 2.  Smith, T.C., R.A. Knapp, C.J. Briggs. 2016. Declines and extinctions of mountain yellow-legged frogs have small effects on benthic macroinvertebrate communities. Ecosphere 7:6 DOI: 10.1002/ecs2.1327.  
 
@@ -134,13 +141,13 @@ print(xteach, include.rownames = FALSE, include.colnames = FALSE, hline.after=NU
 
 4.  Smith, T.C. 2013. Pseudostaurosira pseudoconstruens. in Diatoms of the United States, http://westerndiatoms.colorado.edu/taxa/species/pseudostaurosira_pseudoconstruens  
 
-5.  Mordecai, E.A., K.P. Paaijmans, L.R. Johnson, C.H. Balzer, T. Ben-Horin, E. de Moor, A. McNally, S. Pawar, S.J. Ryan, T.C. Smith, K.D. Lafferty. 2012. Optimal temperature for malaria transmission is dramatically lower than previously predicted. Ecology Letters (2013) 16: 22–30
+5.  Mordecai, E.A., K.P. Paaijmans, L.R. Johnson, C.H. Balzer, T. Ben-Horin, E. de Moor, A. McNally, S. Pawar, S.J. Ryan, T.C. Smith, K.D. Lafferty. 2013. Optimal temperature for malaria transmission is dramatically lower than previously predicted. Ecology Letters 16: 22–30. https://onlinelibrary-wiley-com.proxy.library.ucsb.edu:9443/doi/pdf/10.1111/ele.12015
 
 6.	Knapp, R.A., C.J. Briggs, T.C. Smith, and J.R. Maurer. 2011. Nowhere to hide: impact of a temperature sensitive amphibian pathogen along an elevation gradient in the temperate zone. Ecosphere 2(8):art93. doi:10.1890/ES11-00028.1
 
-7.	Schall, J.J., T.C. Smith. 2006. Detection of a Malaria Parasite (Plasmodium mexicanum) in ectoparasites (Mites and Ticks), and Possible Significance for Transmission. Journal of Parasitology., 92:413–415
+7.	Schall, J.J., T.C. Smith. 2006. Detection of a Malaria Parasite (Plasmodium mexicanum) in ectoparasites (Mites and Ticks), and Possible Significance for Transmission. Journal of Parasitology., 92:413–415.  https://doi.org/10.1645/GE-688R.1
 
-8.	Woodworth, B.L., C.T. Atkinson, D.A. LaPointe, P.J. Hart, C.S. Spiegel, E.J. Tweed, C. Henneman, J. LeBrun, T. Denette, R. DeMots, K.L. Kozar, D. Triglia, D. Lease, A. Gregor, T. Smith, and D. Duffy. 2005. Host population persistence in the face of introduced vector-borne diseases: Hawaii amakihi and avian malaria. Proceeding of the National Academy of Sciences, 102:1531-1536.
+8.	Woodworth, B.L., C.T. Atkinson, D.A. LaPointe, P.J. Hart, C.S. Spiegel, E.J. Tweed, C. Henneman, J. LeBrun, T. Denette, R. DeMots, K.L. Kozar, D. Triglia, D. Lease, A. Gregor, T. Smith, and D. Duffy. 2005. Host population persistence in the face of introduced vector-borne diseases: Hawaii amakihi and avian malaria. Proceeding of the National Academy of Sciences, 102:1531-1536.  https://www.pnas.org/content/pnas/102/5/1531.full.pdf
 
 **Manuscripts in preparation**  
 
@@ -148,7 +155,7 @@ print(xteach, include.rownames = FALSE, include.colnames = FALSE, hline.after=NU
 
 2.  Knapp, Roland A., Maxwell B. Joseph, Thomas C. Smith, Ericka Hegeman, Vance Vredenburg, James Erdman, Andrea Jani. Antifungal interventions can reduce individual infection intensities but do not prevent local extinctions of the endangered mountain yellow-legged frogs.  Target: TBD.
 
-3.  Thomas C. Smith, Claire Pavelka, Ericka Hegeman, and Roland A. Knapp. "Large scale synoptic surveys describe alpine lake communities with emphasis on amphibians, invertebrates, and non-native fish". Data paper. Target: Ecology.  
+3.  Smith, Thomas C., Claire Pavelka, Ericka Hegeman, and Roland A. Knapp. Large scale synoptic surveys describe alpine lake communities with emphasis on amphibians, invertebrates, and non-native fish. Data paper. Target: Ecology.  
 
 4.  Knapp, Roland A., Claire Pavelka, Thomas C. Smith, and Ericka Hegeman. “The Sierra Lakes Inventory Project: non-native fish and community composition of >8,000 lakes and ponds in the Sierra Nevada, California.” Data publication, Environmental Data Initiative.  
 
