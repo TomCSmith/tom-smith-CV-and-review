@@ -66,12 +66,26 @@ zooplankton
 
 *The motivation or purpose of your research should appear in the “Research Origin Descriptors”, where you state the questions you sought to answer, and the background of those questions. In the “Methods” section you should provide sufficient information to allow someone to repeat your work. A clear description of the experimental design, sampling procedures, and statistical procedures is especially important in metadata describing field studies, simulations, or experiments. If you list a product (e.g., animal food, analytical device), supply the name and location of the manufacturer. Give the model number for equipment used. Supply complete citations, including author (or editor), title, year, publisher, and version number, for computer software mentioned in the metadata.*
 
+### Research Origin Descriptors  
+
+%%
+
+### Methods  
+
+`SLIP_Protocol_EDI.pdf`  
+%% appendices are not accepted, so the methods/protocol can just live at EDI?
+%% or reproduce the text of protocol here?
+
 *Particular attention should be paid to providing comprehensive documentation of the physical structure of the data, known data anomalies, and quality assurance and quality control procedures employed. Contributors are encouraged to provide comprehensive documentation of supplemental descriptors that would facilitate secondary data use and interpretation. Before submitting the data paper, contributors should thoroughly review the metadata and verify that physical structure descriptors are sufficient to permit secondary usage of the data.*
+
+The physical structure of the data was a relational database in Microsoft Access. 
+The data tables are supplied as comma separated value files. Data table relationships from the original database are provided in `SLIP_Relationships_Diagram.pdf`. 
+Using the relationships map, a user can recreate the database in Access, any SQL based database manager, and even R.
 
 *Statistical analysis of the data can appear in the metadata section, but it should be kept to a minimum. Such detailed analyses of data sets could, however, form the core of a companion paper submitted to an ESA print journal.*
 
 
-The metadata is in EDI format and resides at:
+The full metadata is in EDI format and is published at:
 
 > `https://portal-s.edirepository.org/nis/mapbrowse?scope=edi&identifier=112&revision=2`
 
@@ -105,9 +119,6 @@ NA.
 %% this should be converted to a PNG, not PDF.
 
 ### Appendices:   
-
-`SLIP_Protocol_EDI.pdf`  
-%% appendices are not accepted, so the methods/protocol can just live at EDI?
 
 ## Assembly of metadata file. 
 Assemble the metadata file in the following order: Title, Authors (data compilers), Authors' addresses, Abstract, Key Words, Metadata, Acknowledgments, Literature Cited.
